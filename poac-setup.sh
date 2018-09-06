@@ -12,12 +12,7 @@ USAGE:
     poac-setup [OPTIONS]
 
 OPTIONS:
-    -v, --verbose           Enable verbose output
-    -y                      Disable confirmation prompt.
-        --no-modify-path    Don't configure the PATH environment variable
     -h, --help              Prints help information
-    -V, --version           Prints version information
-        --with-lib          Downloads development files and documentation for libpoac
 EOF
 }
 
