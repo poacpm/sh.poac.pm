@@ -2,12 +2,12 @@
 
 ## Easy install
 ```bash
-$ curl -fsSL https://sh.poac.pm | sh
+$ curl -fsSL https://sh.poac.pm | bash
 ```
 
 ## Pass arguments
 ```bash
-$ curl -fsSL https://sh.poac.pm | sh -- --help
+$ curl -fsSL https://sh.poac.pm | bash -- --help
 ```
 
 
