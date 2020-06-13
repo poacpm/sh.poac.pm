@@ -259,5 +259,4 @@ check_cmd() {
     return $?
 }
 
-
 main "$@" || exit 1
