@@ -43,7 +43,7 @@ main() {
     case "$_arch" in
 
         x86_64-apple-darwin)
-            ensure brew install poacpm/poac/poac
+            ensure brew install poacpm/tap/poac
             ;;
 
         *)
