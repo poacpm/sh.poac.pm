@@ -15,7 +15,7 @@ set -u
 usage() {
     cat 1>&2 <<EOF
 poac-setup 0.0.5
-The installer for poac
+An installer for poac
 
 USAGE:
     poac-setup [OPTIONS]
@@ -31,11 +31,9 @@ main() {
     need_cmd chmod
     need_cmd mkdir
     need_cmd rm
-    # Runtime requirements
-    need_cmd git
+    # Build requirements
     need_cmd cmake
     need_cmd make
-    need_cmd tar
 
     parse_args $@
 
@@ -43,11 +41,12 @@ main() {
     case "$_arch" in
 
         x86_64-apple-darwin)
-            ensure brew install poacpm/tap/poac
+            say "This set-up script will install as a HEAD formula from the master branch because Poac is currently in development, and all previous releases are broken due to breaking changes."
+            ensure brew install --HEAD poacpm/tap/poac
             ;;
 
         *)
-            err "It is not yet supported except for macOS."
+            err "Poac is not yet supported except for macOS. Please build Poac manually following https://github.com/poacpm/poac#manual-install-build."
 
     esac
 }
